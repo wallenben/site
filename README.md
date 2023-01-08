@@ -9,4 +9,6 @@ Features:
 
 Future goals:
 - Autnomous AI image generation for blogposts
+
+
 Built with Astro, Tailwindcss, and DaisyUI (with one JavaScript function for the day/night algorithm)
