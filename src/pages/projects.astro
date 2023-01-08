@@ -1,51 +1,48 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HorizontalCard from '../components/HorizontalCard.astro';
 ---
 
-<BaseLayout title = "Projects">
-  <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
-  </div>
+<BaseLayout title="Projects">
+	<div>
+		<div class="text-3xl w-full font-bold mb-5">Current Projects</div>
+	</div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+	<HorizontalCard
+		title="Compiler Creation"
+		img="https://upload.wikimedia.org/wikipedia/en/d/dd/LLVM_logo.png"
+		desc="Compilers have piqued my interest for a long time. Using infamous textbooks like 'The Dragon Book', I have been working on a compiler for a custom language per my enrollment in CS-537 at UW - Madison."
+		badge="NEW"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Gameboy Research Emulator"
+		img="https://cdn.arstechnica.net/wp-content/uploads/2018/01/gb.jpg"
+		desc="Creating a Gameboy emulator from scratch, with a focus on understanding the inner workings of the Gameboy. The emulator is written in C using SDL2 for graphics and audio."
+	/>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
+	<div>
+		<div class="text-3xl w-full font-bold mb-5 mt-10">Older Projects</div>
+	</div>
 
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+	<HorizontalCard
+		title="Momentum Mod"
+		img="https://cdn.cloudflare.steamstatic.com/steam/apps/669270/header.jpg?t=1673076376"
+		desc="Worked on the full-stack web portion of the game and the UI in C++. The game is a mod for Half-Life 2, and is a racing game with a focus on advanced movement physics in the Source Engine."
+		url="https://momentum-mod.org/"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Discsurfer"
+		img="https://user-images.githubusercontent.com/72104872/184947118-6af241f1-a959-45ea-82cc-dacc37aca0ea.png"
+		desc="Worked with another student to use the power of Golang to index a storage medium at lightning fast speeds using Golang workers. Proof of concept CLI tool that will (one day) be tied to a frontend."
+		url="https://github.com/wallenben/discsurfer"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Full Stack LMS (Library Management System)"
+		img="https://cdn.elearningindustry.com/wp-content/uploads/2019/11/learning-management-systems-the-advantages.jpg"
+		desc="Created a full-stack library management system. The system allows for viewing data pertaining to books, and is a proof of concept full-stack app demonstrating usage of HTML/CSS, JavaScript, PHP, and PostgreSQL."
+		url="https://github.com/wallenben/Webdev/tree/main/finalproj"
+	/>
 </BaseLayout>
