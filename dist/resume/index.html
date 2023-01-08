@@ -4,7 +4,7 @@
 		<script>
 			let date = new Date();
 			//write a script to change the theme using themeChange if the hour is greater than 11
-			if (parseInt(date.getHours()) >= 12) {
+			if (parseInt(date.getHours()) <= 17) {
 				document.documentElement.setAttribute('data-theme', 'emerald');
 			} else {
 				document.documentElement.setAttribute('data-theme', 'forest');
@@ -35,7 +35,7 @@
 <meta property="twitter:description" content="My personal website and blog - Ben Wallen.">
 <meta property="twitter:image" content="https://wallenben.github.io/social_img.png">
 
-	<link rel="stylesheet" href="/assets/e25c8142.48869903.css" />
+	<link rel="stylesheet" href="/assets/e25c8142.451c28e2.css" />
 <link rel="stylesheet" href="/assets/02c5f044.36c50de2.css" /><script type="module">var d={exports:{}};(function(u,s){function o(){var t=document.querySelector("[data-toggle-theme]");(function(e=localStorage.getItem("theme")){localStorage.getItem("theme")&&(document.documentElement.setAttribute("data-theme",e),t&&[...document.querySelectorAll("[data-toggle-theme]")].forEach(a=>{a.classList.add(t.getAttribute("data-act-class"))}))})(),t&&[...document.querySelectorAll("[data-toggle-theme]")].forEach(e=>{e.addEventListener("click",function(){var a=e.getAttribute("data-toggle-theme");if(a){var c=a.split(",");document.documentElement.getAttribute("data-theme")==c[0]?c.length==1?(document.documentElement.removeAttribute("data-theme"),localStorage.removeItem("theme")):(document.documentElement.setAttribute("data-theme",c[1]),localStorage.setItem("theme",c[1])):(document.documentElement.setAttribute("data-theme",c[0]),localStorage.setItem("theme",c[0]))}[...document.querySelectorAll("[data-toggle-theme]")].forEach(r=>{r.classList.toggle(this.getAttribute("data-act-class"))})})})}function l(){(function(t=localStorage.getItem("theme")){if(t!=null&&t!="")if(localStorage.getItem("theme")&&localStorage.getItem("theme")!=""){document.documentElement.setAttribute("data-theme",t);var e=document.querySelector("[data-set-theme='"+t.toString()+"']");e&&([...document.querySelectorAll("[data-set-theme]")].forEach(a=>{a.classList.remove(a.getAttribute("data-act-class"))}),e.getAttribute("data-act-class")&&e.classList.add(e.getAttribute("data-act-class")))}else{var e=document.querySelector("[data-set-theme='']");e.getAttribute("data-act-class")&&e.classList.add(e.getAttribute("data-act-class"))}})(),[...document.querySelectorAll("[data-set-theme]")].forEach(t=>{t.addEventListener("click",function(){document.documentElement.setAttribute("data-theme",this.getAttribute("data-set-theme")),localStorage.setItem("theme",document.documentElement.getAttribute("data-theme")),[...document.querySelectorAll("[data-set-theme]")].forEach(e=>{e.classList.remove(e.getAttribute("data-act-class"))}),t.getAttribute("data-act-class")&&t.classList.add(t.getAttribute("data-act-class"))})})}function m(){(function(t=localStorage.getItem("theme")){if(localStorage.getItem("theme")){document.documentElement.setAttribute("data-theme",t);var e=document.querySelector("select[data-choose-theme] [value='"+t.toString()+"']");e&&[...document.querySelectorAll("select[data-choose-theme] [value='"+t.toString()+"']")].forEach(a=>{a.selected=!0})}})(),document.querySelector("select[data-choose-theme]")&&[...document.querySelectorAll("select[data-choose-theme]")].forEach(t=>{t.addEventListener("change",function(){document.documentElement.setAttribute("data-theme",this.value),localStorage.setItem("theme",document.documentElement.getAttribute("data-theme")),[...document.querySelectorAll("select[data-choose-theme] [value='"+localStorage.getItem("theme")+"']")].forEach(e=>{e.selected=!0})})})}function n(t=!0){t===!0?document.addEventListener("DOMContentLoaded",function(e){o(),m(),l()}):(o(),m(),l())}u.exports={themeChange:n}})(d);d.exports.themeChange();
 </script></head>
 	<body>
@@ -180,7 +180,7 @@
 				</div>
 				<footer class="footer footer-center block mb-5 pt-10 astro-23VR3GML">
 	<div class="pb-2 astro-23VR3GML">
-		2023-1-8 12:44:17
+		2023-1-8 14:14:13
 	</div>
 </footer>
 
@@ -207,8 +207,8 @@
 		</ul>
 		<div class="grow"></div>
 		<div class="social-icons px-4 my-2 flex self-center">
-			<a href="https://leetcode.com/wallenben" target="_blank" class="mx-3" aria-label="Leetcode">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path d="M 10.5 8 C 6.9280619 8 4 10.928062 4 14.5 L 4 33.5 C 4 37.071938 6.9280619 40 10.5 40 L 37.5 40 C 41.071938 40 44 37.071938 44 33.5 L 44 14.5 C 44 10.928062 41.071938 8 37.5 8 L 10.5 8 z M 10.5 11 L 37.5 11 C 38.093018 11 38.640276 11.157774 39.126953 11.412109 L 24 19.589844 L 8.8730469 11.412109 C 9.3597237 11.157774 9.9069817 11 10.5 11 z M 10 18.84375 L 22.572266 25.638672 C 23.018266 25.879672 23.509 26 24 26 C 24.491 26 24.981734 25.879672 25.427734 25.638672 L 38 18.84375 L 38 36.951172 C 37.835551 36.974343 37.671413 37 37.5 37 L 10.5 37 C 10.328587 37 10.164449 36.974343 10 36.951172 L 10 18.84375 z"></path>
+			<a href="mailto:benpwalleng@gmail.com" target="_blank" class="mx-3" aria-label="Email">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px" style="fill: currentColor;transform: ;msFilter:;"><path d="M 10.5 8 C 6.9280619 8 4 10.928062 4 14.5 L 4 33.5 C 4 37.071938 6.9280619 40 10.5 40 L 37.5 40 C 41.071938 40 44 37.071938 44 33.5 L 44 14.5 C 44 10.928062 41.071938 8 37.5 8 L 10.5 8 z M 10.5 11 L 37.5 11 C 38.093018 11 38.640276 11.157774 39.126953 11.412109 L 24 19.589844 L 8.8730469 11.412109 C 9.3597237 11.157774 9.9069817 11 10.5 11 z M 10 18.84375 L 22.572266 25.638672 C 23.018266 25.879672 23.509 26 24 26 C 24.491 26 24.981734 25.879672 25.427734 25.638672 L 38 18.84375 L 38 36.951172 C 37.835551 36.974343 37.671413 37 37.5 37 L 10.5 37 C 10.328587 37 10.164449 36.974343 10 36.951172 L 10 18.84375 z"></path>
 				</svg>
 			</a>
 			<a href="https://leetcode.com/wallenben" target="_blank" class="mx-3" aria-label="Leetcode">
