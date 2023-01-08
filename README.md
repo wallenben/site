@@ -5,6 +5,8 @@ Features:
 - Autnomous site compilation via Github Actions
 - Cross-compatability with mobile via mobile breakpoints
 - Cool typewriter effect using CSS only
+
+
 Future goals:
 - Autnomous AI image generation for blogposts
 Built with Astro, Tailwindcss, and DaisyUI (with one JavaScript function for the day/night algorithm)
