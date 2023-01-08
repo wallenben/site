@@ -1,5 +1,9 @@
 Personal website.
+Features:
+Automatic day/night theme switch if the user views past 5-6 PM in their respective timezone
+Autnomous blog with markdwon support
+Autnomous site compilation via Github Actions
+Cross-compatability with mobile via mobile breakpoints
+Cool typewriter effect using CSS only
 
--Add project information
--Overhaul theme and general sidebar structure
--testing to see if gitkraken still thinks i have 3 different git accounts
+Built with Astro, Tailwindcss, and DaisyUI (with one JavaScript function for the day/night algorithm)
