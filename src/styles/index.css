@@ -17,8 +17,8 @@
   word-break:break-all;
   animation:
     c 0.5s infinite steps(1),  
-    t 2s linear infinite alternate,
-    m 12s steps(3) infinite;
+    t 3s linear infinite alternate,
+    m 18s steps(3) infinite;
 }
 .type span span:before {
   content:" ";
@@ -36,4 +36,7 @@
 
 @keyframes m{
   100% {transform:translateY(-300%)}
+}
+[data-theme="emerald"] .sidebar {
+  background-color: #F9FAFB;
 }

@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="lofi">
-  <head>
-    <!-- Global Metadata --><meta charset="utf-8">
+<html lang="en" data-theme="emerald">
+	<head>
+		<script>
+			let date = new Date();
+			// ☝️ This script prevent the FART effect.
+			if (date.getHourst > 2) {
+				document.documentElement.setAttribute('data-theme', 'forest');
+			}
+		</script>
+		
+		<!-- Global Metadata --><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta name="generator" content="Astro v1.2.3">
@@ -9,29 +17,30 @@
 <!-- Primary Meta Tags -->
 <title>Resume</title>
 <meta name="title" content="Resume">
-<meta name="description" content="Astro Modern Personal Website template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing.">
+<meta name="description" content="My personal website and blog - Ben Wallen.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wallenben.github.io/resume/">
 <meta property="og:title" content="Resume">
-<meta property="og:description" content="Astro Modern Personal Website template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing.">
+<meta property="og:description" content="My personal website and blog - Ben Wallen.">
 <meta property="og:image" content="https://wallenben.github.io/social_img.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://wallenben.github.io/resume/">
 <meta property="twitter:title" content="Resume">
-<meta property="twitter:description" content="Astro Modern Personal Website template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing.">
+<meta property="twitter:description" content="My personal website and blog - Ben Wallen.">
 <meta property="twitter:image" content="https://wallenben.github.io/social_img.png">
 
-  <link rel="stylesheet" href="/assets/cc71e2a8.61e60dc1.css" />
-<link rel="stylesheet" href="/assets/4b001875.36c50de2.css" /></head>
-  <body>
-    <div class="bg-base-100 drawer drawer-mobile">
-      <input id="my-drawer" type="checkbox" class="drawer-toggle">
-      <div class="drawer-content flex flex-col bg-base-100">
-        <div class="sticky lg:hidden top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-sm">
+	<link rel="stylesheet" href="/assets/e25c8142.7feba99d.css" />
+<link rel="stylesheet" href="/assets/02c5f044.36c50de2.css" /><script type="module">var d={exports:{}};(function(u,s){function o(){var t=document.querySelector("[data-toggle-theme]");(function(e=localStorage.getItem("theme")){localStorage.getItem("theme")&&(document.documentElement.setAttribute("data-theme",e),t&&[...document.querySelectorAll("[data-toggle-theme]")].forEach(a=>{a.classList.add(t.getAttribute("data-act-class"))}))})(),t&&[...document.querySelectorAll("[data-toggle-theme]")].forEach(e=>{e.addEventListener("click",function(){var a=e.getAttribute("data-toggle-theme");if(a){var c=a.split(",");document.documentElement.getAttribute("data-theme")==c[0]?c.length==1?(document.documentElement.removeAttribute("data-theme"),localStorage.removeItem("theme")):(document.documentElement.setAttribute("data-theme",c[1]),localStorage.setItem("theme",c[1])):(document.documentElement.setAttribute("data-theme",c[0]),localStorage.setItem("theme",c[0]))}[...document.querySelectorAll("[data-toggle-theme]")].forEach(r=>{r.classList.toggle(this.getAttribute("data-act-class"))})})})}function l(){(function(t=localStorage.getItem("theme")){if(t!=null&&t!="")if(localStorage.getItem("theme")&&localStorage.getItem("theme")!=""){document.documentElement.setAttribute("data-theme",t);var e=document.querySelector("[data-set-theme='"+t.toString()+"']");e&&([...document.querySelectorAll("[data-set-theme]")].forEach(a=>{a.classList.remove(a.getAttribute("data-act-class"))}),e.getAttribute("data-act-class")&&e.classList.add(e.getAttribute("data-act-class")))}else{var e=document.querySelector("[data-set-theme='']");e.getAttribute("data-act-class")&&e.classList.add(e.getAttribute("data-act-class"))}})(),[...document.querySelectorAll("[data-set-theme]")].forEach(t=>{t.addEventListener("click",function(){document.documentElement.setAttribute("data-theme",this.getAttribute("data-set-theme")),localStorage.setItem("theme",document.documentElement.getAttribute("data-theme")),[...document.querySelectorAll("[data-set-theme]")].forEach(e=>{e.classList.remove(e.getAttribute("data-act-class"))}),t.getAttribute("data-act-class")&&t.classList.add(t.getAttribute("data-act-class"))})})}function m(){(function(t=localStorage.getItem("theme")){if(localStorage.getItem("theme")){document.documentElement.setAttribute("data-theme",t);var e=document.querySelector("select[data-choose-theme] [value='"+t.toString()+"']");e&&[...document.querySelectorAll("select[data-choose-theme] [value='"+t.toString()+"']")].forEach(a=>{a.selected=!0})}})(),document.querySelector("select[data-choose-theme]")&&[...document.querySelectorAll("select[data-choose-theme]")].forEach(t=>{t.addEventListener("change",function(){document.documentElement.setAttribute("data-theme",this.value),localStorage.setItem("theme",document.documentElement.getAttribute("data-theme")),[...document.querySelectorAll("select[data-choose-theme] [value='"+localStorage.getItem("theme")+"']")].forEach(e=>{e.selected=!0})})})}function n(t=!0){t===!0?document.addEventListener("DOMContentLoaded",function(e){o(),m(),l()}):(o(),m(),l())}u.exports={themeChange:n}})(d);d.exports.themeChange();
+</script></head>
+	<body>
+		<div class="bg-base-100 drawer drawer-mobile">
+			<input id="my-drawer" type="checkbox" class="drawer-toggle">
+			<div class="drawer-content flex flex-col bg-base-100">
+				<div class="sticky lg:hidden top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-sm">
 	<div class="navbar">
 		<div class="navbar-start">
 			<label for="my-drawer" class="btn btn-square btn-ghost">
@@ -45,9 +54,9 @@
 		<div class="navbar-end"></div>
 	</div>
 </div>
-        <div class="md:flex md:justify-center">
-          <main class="p-6 pt-10 max-w-[900px]">
-            <div class="mb-5">
+				<div class="md:flex md:justify-center">
+					<main class="p-6 pt-10 max-w-[900px]">
+						<div class="mb-5">
 		<div class="text-3xl w-full font-bold whitespace-pre-line">Resume</div>
 	</div><div class="whitespace-pre-line">
 		I have been engrossed in computers since I was (literally) one year old. At
@@ -165,18 +174,18 @@
 		<li>ExpressJS</li>
 		<li>PostgreSQL</li>
 	</ul>
-          </main>
-        </div>
-        <footer class="footer footer-center block mb-5 pt-10 astro-23VR3GML">
+					</main>
+				</div>
+				<footer class="footer footer-center block mb-5 pt-10 astro-23VR3GML">
 	<div class="pb-2 astro-23VR3GML">
-		2023-1-8 1:27:47
+		2023-1-8 11:45:14
 	</div>
 </footer>
 
-      </div>
-      <div class="drawer-side bg-base-200">
+			</div>
+			<div class="drawer-side bg-base-200">
 	<label for="my-drawer" class="drawer-overlay bg-base-200"></label>
-	<div class="menu p-4 overflow-y-auto w-[19rem] bg-base-200 text-base-content">
+	<div class="menu p-4 overflow-y-auto w-[19rem] bg-gray-50 text-base-content">
 		<div class="w-fit">
 			<a href="/">
 				<div class="avatar transition ease-in-out w-1/2 hover:scale-[102%] block m-auto mt-3 mb-6">
@@ -186,7 +195,7 @@
 				</div>
 			</a>
 		</div>
-		<ul>
+		<ul class="">
 			<!-- Sidebar content here -->
 			<li><a href="/">Home</a></li>
 			<li><a href="/resume">Resume</a></li>
@@ -215,5 +224,5 @@
 		</div>
 	</div>
 </div>
-    </div>
-  </body></html>
+		</div>
+	</body></html>

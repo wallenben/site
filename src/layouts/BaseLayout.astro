@@ -14,8 +14,21 @@ const {
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-theme="lofi">
+<html lang="en">
 	<head>
+		<script is:inline>
+			let date = new Date();
+			//write a script to change the theme using themeChange if the hour is greater than 11
+			if (parseInt(date.getHours()) <= 16) {
+				document.documentElement.setAttribute('data-theme', 'emerald');
+			} else {
+				document.documentElement.setAttribute('data-theme', 'forest');
+			}
+		</script>
+		<script>
+			import { themeChange } from 'theme-change';
+			themeChange();
+		</script>
 		<BaseHead title={title} description={description} image={image} />
 	</head>
 	<body>
