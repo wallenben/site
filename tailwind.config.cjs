@@ -14,6 +14,13 @@ module.exports = {
 						'background-color': '#F9FAFB',
 					},
 				},
+
+				forest: {
+					...require('daisyui/src/colors/themes')['[data-theme=forest]'],
+					'.sidebar': {
+						'background-color': 'hsl(var(--b2))',
+					},
+				},
 			},
 		],
 	},

@@ -19,8 +19,8 @@ const {
 		<script is:inline>
 			let date = new Date();
 			//write a script to change the theme using themeChange if the hour is greater than 11
-			if (parseInt(date.getHours()) <= 17) {
-				document.documentElement.setAttribute('data-theme', 'emerald');
+			if (parseInt(date.getHours()) >= 17) {
+				document.documentElement.setAttribute('data-theme', 'forest');
 			} else {
 				document.documentElement.setAttribute('data-theme', 'forest');
 			}
