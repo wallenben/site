@@ -6,6 +6,15 @@ module.exports = {
 	},
 	plugins: [require('@tailwindcss/typography'), require('daisyui')],
 	daisyui: {
-		themes: ['emerald', 'forest', 'dark-emerald'],
+		themes: [
+			{
+				emerald: {
+					...require('daisyui/src/colors/themes')['[data-theme=emerald]'],
+					'.sidebar': {
+						'background-color': '#F9FAFB',
+					},
+				},
+			},
+		],
 	},
 };

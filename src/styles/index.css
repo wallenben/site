@@ -37,6 +37,3 @@
 @keyframes m{
   100% {transform:translateY(-300%)}
 }
-[data-theme="emerald"] .sidebar {
-  background-color: #F9FAFB;
-}
