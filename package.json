@@ -1,6 +1,8 @@
 {
-  "name": "@example/basics",
-  "version": "0.0.1",
+  "name": "Astro Modern Personal Website",
+  "description": "Astro Modern personal website template with Project Section, CV Section, Paginated Blog, Shop, RSS Feed, SEO Friendly, Visual themes and Responsive Desing.",
+  "type": "module",
+  "version": "1.1.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -10,18 +12,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.1.5",
-    "cosmicjs": "^4.2.10",
-    "date-fns": "^2.29.2",
-    "react-markdown": "^8.0.3"
+    "@astrojs/mdx": "^0.11.1",
+    "@astrojs/rss": "^1.0.1",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/tailwind": "^1.0.1",
+    "astro": "^1.2.3",
+    "daisyui": "^2.27.0"
   },
   "devDependencies": {
-    "@astrojs/image": "^0.5.1",
-    "@astrojs/react": "^1.1.1",
-    "@astrojs/tailwind": "^1.0.0",
-    "@types/node": "^18.7.15",
-    "astro-robots-txt": "^0.3.8",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@tailwindcss/typography": "^0.5.7"
   }
 }

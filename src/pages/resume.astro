@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TimeLineElement from '../components/cv/TimeLine.astro';
+import TimeLineLite from '../components/cv/TimeLineLite.astro';
+import TimeLineExp from '../components/cv/TimeLineExp.astro';
+---
+
+<BaseLayout title="Resume">
+	<div class="mb-5">
+		<div class="text-3xl w-full font-bold whitespace-pre-line">Resume</div>
+	</div>
+	<div class="whitespace-pre-line">
+		I have been engrossed in computers since I was (literally) one year old. At
+		the age of ten, I start programming, and I have been completely infaturated
+		with Computer Science ever since. Initially, I studied Networking
+		Engineering at the University of Wisconsin - Stout, before transferring to
+		complete my degree in B.sc Computer Sciences at the University of Wisconsin
+		- Madison. My background in networking and programming gives me a unique
+		perspective on the software development lifecycle, which has assisted me as
+		I take on difficult programming projects and classes.
+		{/* prettier-ignore */
+}
+		My skillset is quite broad -- ranging from creating emulators and decompiling
+		C binaries to cutting edge web development, I bolster a true full-stack development
+		skillset that helps me overcome any task I am given.
+	</div>
+	<br />
+	<div class="mb-5">
+		<div class="text-3xl w-full font-bold">Education</div>
+	</div>
+
+	<div class="time-line-container grid gap-4 mb-10 font-normal">
+		<TimeLineLite
+			title="B.sc Computer Networking"
+			school="University of Wisconsin - Stout, 2019-2021"
+			subtitle="Studied B.sc Computer Networking before transferring credits to UW - Madison."
+		/>
+		<TimeLineElement
+			title="B.sc Computer Sciences"
+			school="University of Wisconsin - Madison, 2021-2024"
+			subtitle="Coordinator (leadership position) for the CS Undergraduate Project Laboratory."
+		/>
+	</div>
+
+	<div class="mb-5">
+		<div class="text-3xl w-full font-bold">Experience</div>
+	</div>
+
+	<div class="time-line-container mb-10">
+		<TimeLineExp
+			company="Cigna"
+			title="Software Engineering Intern, May 2021 - Aug 2021 (Denver, CO)"
+			desc="Full Stack Engineer for Cigna's myMatrixx branch. Worked on various tickets in Java microservices for a ReactJS web application. Helped create autonomous dev tooling for porting Oracle databases to Postgres databases, optimizing the loadtimes by well over 2300%."
+			desc2="Additionally did QA automation in Java, and various Frontend work (ReactJS enhancements, Frontend developer and manager for the 2021 React Native SIP project - a production web application built on Expo and a serverless AWS stack)."
+		/>
+		<br />
+		<TimeLineExp
+			company="Mastercard"
+			title="Software Engineering Intern, Jun 2022 - Aug 2022 (O'Fallon, MO)"
+			desc="Worked on automating SSO user creation for an application written in C# / .NET. Created a tool for nearly complete autonomous creation of Mastercard users and autonomous XML serialization to facilitate new user creation on Mastercard's older software. Additionally created a tool autonomously removing serialized users from Mastercard XML datasheets. Wrote the tool in JavaScript with NodeJS standard libraries. "
+			desc2="Prototyped and documented various internal Mastercard products. Created all documentation for accessing and posting from an internal Mastercard product API. Used this documentation to create a system design prototype for a solution to fully autonomous user creation."
+		/>
+		<br />
+		<TimeLineExp
+			company="Amazon"
+			title="Incoming Software Engineering Intern, 2023 (Seattle, WA)"
+			desc="Software Engineer for Core Account Services (CAS) team."
+		/>
+	</div>
+
+	<div class="mb-5">
+		<div class="text-3xl w-full font-bold">Skills</div>
+	</div>
+
+	<ul class="list-disc md:columns-5 columns-2 mx-6">
+		<li>JavaScript</li>
+		<li>Python</li>
+		<li>Java</li>
+		<li>C</li>
+		<li>C++</li>
+		<li>x86 Assembly</li>
+		<li>TypeScript</li>
+		<li>Go</li>
+		<li>ReactJS</li>
+		<li>React Native</li>
+		<li>Gatsby</li>
+		<li>Astro</li>
+		<li>NodeJS</li>
+		<li>ExpressJS</li>
+		<li>PostgreSQL</li>
+	</ul>
+</BaseLayout>

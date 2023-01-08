@@ -1,79 +1,87 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import { getAllPosts } from "../lib/cosmic";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import index from "../styles/index.css";
 
-const data = await getAllPosts();
+const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
+  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+);
 
-export interface Post {
-  title: string;
-  slug: string;
-  metadata: {
-    excerpt: string;
-    tags: {
-      title: string;
-    }[];
-  };
-}
+const last_posts = posts.slice(0, 3);
 ---
 
-<Layout>
-  <h1 class="text-4xl font-bold">
-    Simple <span
-      class="bg-clip-text text-transparent bg-gradient-to-b from-[#4f39fa] to-[#da62c4]"
-      >Astro</span
-    > Blog
-  </h1>
-  <div class="my-6"></div>
-  <p class="text-2xl mb-4 font-bold">This Blog is built with:</p>
-  <section class="w-full flex flex-col lg:flex-row gap-8">
-    <a
-      href="https://www.cosmicjs.com/"
-      class="bg-[#1e1e1e] w-full p-6 rounded-md shadow-md hover:shadow-lg hover:opacity-80 transition"
-    >
-      <h3
-        class="text-2xl font-bold bg-gradient-to-l bg-clip-text text-transparent from-[#29ABE2] to-[#6CEEF6] w-fit"
-      >
-        Cosmic
-      </h3>
-      <p class="text-white">
-        A Headless Content Management System and API toolkit.
-      </p>
-    </a>
-    <a
-      href="https://astro.build/"
-      class="bg-[#1e1e1e] w-full p-6 rounded-md shadow-md hover:shadow-lg hover:opacity-80 transition"
-    >
-      <h3
-        class="text-2xl font-bold bg-gradient-to-b bg-clip-text text-transparent from-[#4f39fa] to-[#da62c4] w-fit"
-      >
-        Astro
-      </h3>
-      <p class="text-white">
-        A lightweight web framework for building content focused websites.
-      </p>
-    </a>
-  </section>
-  <div class="my-6"></div>
-  <h3 class="text-2xl font-bold mb-4">Blog Posts</h3>
-  <section>
-    <ul class="grid md:grid-cols-2 gap-8">
-      {
-        data.map((post: Post) => (
-          <Card
-            title={post.title}
-            href={post.slug}
-            body={post.metadata.excerpt}
-            tags={post.metadata.tags.map((tag) => tag.title)}
-          />
-        ))
-      }
-    </ul>
-  </section>
-  <div class="my-12"></div>
-  <a
-    href="/blog"
-    class="text-xl bg-gradient-to-l hover:bg-gradient-to-b from-[#29ABE2] to-[#6CEEF6] hover:from-[#4f39fa] hover:to-[#da62c4] text-white rounded-md px-8 py-3 shadow-md hover:shadow-xl transition self-center"
-    >Blog page</a
-  >
-</Layout>
+<BaseLayout>
+
+    <div class="pb-12 mt-5">
+      <div class="text-5xl font-bold ">
+        <span class="type">
+        <span>
+          <span>Hello</span>
+          <span>你好</span>
+          <span>Привет</span>
+        </span>
+        </span>
+      </div>
+      <div class="text-3xl py-3 font-bold">CS @ University of Wisconsin - Madison</div>
+      <div class="py-2">
+        <text class="whitespace-pre-line text-lg">
+          I find technology fascinating. I an always habitually poking around in different areas of Computer Science - from Web Development to true low-level development in Compilers and reversing x86 ASM. 
+
+          </text>
+          <text class="whitespace-pre-line text-lg">Currently, I am studying Computer Sciences at the University of Wisconsin - Madison, where I help run the Computer Science Undergraduate Project Laboratory. I assist students with project ideas and internships and organize large-scale hackathons for the greater student body at UW - Madison.
+          
+          </text>
+          <text class="whitespace-pre-line text-lg">In my free time, I tend to explore areas of interest in Computer Science - usually in the form of doing a project (which are detailed below). I also write a plethora of Leetcode solutions online, which can be found <a class="text-green-400" target="_blank" href="https://leetcode.com/wallenben/">here</a>.</text>
+        </div>
+      <div class="mt-8">
+        <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> LinkedIn</a>
+        <a href="/resume" class="btn btn-outline ml-5"> Resume</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    </div>
+
+    <HorizontalCard
+      title="Demo Project 1"
+      img="/post_img.webp"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      url="#"
+      badge="NEW"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+    title="Demo Project 2"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+  />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+    title="Demo Project 3"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+    badge="FOSS"
+  />
+
+
+    <div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    </div>
+
+    {
+      last_posts.map((post) => (
+        <HorizontalCard
+          title={post.frontmatter.title}
+          img={post.frontmatter.heroImage}
+          desc={post.frontmatter.description}
+          url={post.url}
+          target="_self"
+        />
+        <div class="divider my-0"></div>
+      ))
+    }
+
+</BaseLayout>
