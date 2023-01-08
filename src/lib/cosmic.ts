@@ -1,4 +1,4 @@
-import Cosmic from "cosmicjs";
+/**import Cosmic from "cosmicjs";
 const api = Cosmic();
 
 const bucket = api.bucket({
@@ -32,3 +32,4 @@ export async function getConfig() {
     .props("metadata");
   return data.objects[0];
 }
+*/
