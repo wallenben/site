@@ -19,7 +19,8 @@ const {
 		<script is:inline>
 			let date = new Date();
 			//write a script to change the theme using themeChange if the hour is greater than 11
-			if (parseInt(date.getHours()) <= 16) {
+			//base: make sure to check if its still dark at +00 UTC
+			if (parseInt(date.getHours()) >= 7 && parseInt(date.getHours()) <= 16) {
 				document.documentElement.setAttribute('data-theme', 'emerald');
 			} else {
 				document.documentElement.setAttribute('data-theme', 'forest');
