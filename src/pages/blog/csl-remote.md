@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/PostLayout.astro'
-title: 'Remoting into CSL at UW - Madison through VSCode Remoter Explorer'
+title: 'Remoting into CSL at UW - Madison through VSCode Remoteß Explorer'
 description: "CSL is UW's virtual Linux solution. It's used in nearly all levels of classes at UW. However, it can be sluggish and development time can be compromised by requiring predisposed knowledge to CLI tools, like VIM, GDB, and so forth."
 pubDate: 'April 16 2023'
 heroImage: '/bascom-fall.jpg'
@@ -8,7 +8,7 @@ heroImage: '/bascom-fall.jpg'
 
 It is impossible to avoid using CSL if you want to maintain a semblance of a good grade at the University of Wisconsin - Madison. The reasoning is simple: a lot of programming projects have nifty autograders, but naturally these autograders cannot possible account for every version or permutation of a problem. Hence, it's heavily suggested to do all development on the university's CSL machines (virtual linux instances) as the versions of software provided are guaranteed to work per the grading specifications.
 
-The problem with this, is that (traditionally) you are restricted to a CLI environment, which can make fast development cumbersome at best, even with working knowledge of powerful tools like VIM and GDB. For me personally, I have become quite accustom to VSCode and the tooling available. Fortunately, there is a way to get the best of both worlds: you can remote into CSL machines through VSCode, and use all of it's powerful plugins as a consequence.
+The problem with this, is that (traditionally) you are restricted to a CLI environment, which can make fast development cumbersome at best, even with working knowledge of powerful tools like VIM and GDB. For me personally, I have become quite accustomed to VSCode and the tooling available. Fortunately, there is a way to get the best of both worlds: you can remote into CSL machines through VSCode, and use all of it's powerful plugins as a consequence.
 
 The idea stems from using Remote Explorer in VSCode on your local machine. With just an SSH connection, you get access to a full VSCode instance on a remote machine! Making this work with the university is it's own challenge, though. After inputting SSH credentials, a plethora of things can go wrong:
 
