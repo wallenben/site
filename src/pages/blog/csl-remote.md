@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/PostLayout.astro'
-title: 'Remoting into CSL at UW - Madison through VSCode Remoteß Explorer'
+title: 'Remoting into CSL at UW - Madison through VSCode Remote Explorer'
 description: "CSL is UW's virtual Linux solution. It's used in nearly all levels of classes at UW. However, it can be sluggish and development time can be compromised by requiring predisposed knowledge to CLI tools, like VIM, GDB, and so forth."
 pubDate: 'April 16 2023'
 heroImage: '/bascom-fall.jpg'
