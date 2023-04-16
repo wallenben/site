@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PostLayout.astro'
 title: 'Remoting into CSL at UW - Madison through VSCode Remoter Explorer'
-description: 'CSL - UW's virtual Linux solution - is used in nearly all levels of classes at UW. However, it can be sluggish and development time can be compromised by requiring predisposed knowledge to CLI tools, like VIM, GDB, and so forth.'
+description: "CSL is UW's virtual Linux solution. It's used in nearly all levels of classes at UW. However, it can be sluggish and development time can be compromised by requiring predisposed knowledge to CLI tools, like VIM, GDB, and so forth."
 pubDate: 'April 16 2023'
 heroImage: '/bascom-fall.jpg'
 ---
