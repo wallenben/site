@@ -19,6 +19,7 @@ Probably the most common (and most tedious fix) is that in the initial installat
 This can also happen if the remote connection doesn't close out properly (and the .lock file still exists). In this case, you have to navigate to the same directory and delete the matching .lock file `~/vscode/bin/<hash>.lock`
 
 - Recursively asking for credentials upon entering a folder
-  There doesn't seem to be a good fix for this, as it seems to be an issue with how files are fetched on the network. Your only real hope is to terminate the connection, and try again.
+
+There doesn't seem to be a good fix for this, as it seems to be an issue with how files are fetched on the network. Your only real hope is to terminate the connection, and try again.
 
 Despite these odd issues, when the connection does work, you gain access to all of the virtual linux software inside of vscode, which can optimize your workflow exponentially!
