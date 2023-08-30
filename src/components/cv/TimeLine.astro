@@ -12,9 +12,29 @@ const { title, subtitle, desc, school } = Astro.props;
 	<div class="experience__data bd-grid px-5">
 		<h3 class="font-semibold mb-1">{title}</h3>
 		<h3 class="italic mb-1 text-sm">{school}</h3>
-		<span class="font-light text-sm">{subtitle}</span>
+		<span class="font-light text-sm">
+			{
+				subtitle.split('\n').map((line, index) => {
+					return (
+						<fragment key={index}>
+							{line}
+							<br />
+						</fragment>
+					);
+				})
+			}
+		</span>
+
 		<p class="my-2 text-justify">
-			{desc}
+			{desc.split('\n').map((line, index) => {
+				return (
+					<fragment key={index}>
+						{line}
+						<br />
+					</fragment>
+				);
+			})}
 		</p>
+		
 	</div>
 </div>

@@ -33,12 +33,14 @@ import TimeLineExp from '../components/cv/TimeLineExp.astro';
 		<TimeLineLite
 			title="B.sc Computer Networking"
 			school="University of Wisconsin - Stout, 2019-2021"
-			subtitle="Studied B.sc Computer Networking before transferring credits to UW - Madison."
+			subtitle="Studied B.sc Computer Networking before transferring degree credits to UW - Madison."
+			desc="Completed CCNA, CCIE networking curriculum."
 		/>
 		<TimeLineElement
 			title="B.sc Computer Sciences"
 			school="University of Wisconsin - Madison, 2021-2024"
-			subtitle="Coordinator (leadership position) for the CS Undergraduate Project Laboratory."
+			subtitle={`Coordinator (leadership position) for the CS Undergraduate Project Laboratory.\nAWS Cloud Captain\nJane Street Estimathon UW Lead Organizer\nHatathon Spring 2022 Organizer \nMadHacks Organizer Spring 2023 \nMadHacks Organizer Fall 2023\n`}
+			desc={`Golden Brick Award 2022 Recipient\nHosted 4x lectures on SWE Industry Preparation\nCo-hosted multiple course seminars to UW students`}
 		/>
 	</div>
 
@@ -49,28 +51,32 @@ import TimeLineExp from '../components/cv/TimeLineExp.astro';
 	<div class="time-line-container mb-10">
 		<TimeLineExp
 			company="Cigna"
-			title="Software Engineering Intern, May 2021 - Aug 2021 (Denver, CO)"
+			title="Software Engineering Intern"
+			metadata="May - August 2021 (Denver, CO)"
 			desc="Full Stack Engineer for Cigna's myMatrixx branch. Worked on various tickets in Java microservices for a ReactJS web application. Helped create autonomous dev tooling for porting Oracle databases to Postgres databases, decreasing database loadtimes by over 97%"
 			desc2="Additionally did QA automation in Java, and various Frontend work (ReactJS enhancements, Frontend developer and manager for the 2021 React Native SIP project - a production web application built on Expo and a serverless AWS stack)."
 		/>
 		<br />
 		<TimeLineExp
 			company="Mastercard"
-			title="Software Engineering Intern, Jun 2022 - Aug 2022 (O'Fallon, MO)"
+			title="Software Engineering Intern"
+			metadata="June - August 2022 (O'Fallon, MO)"
 			desc="Worked on automating SSO user creation for an application written in C# / .NET. Created a tool for nearly complete autonomous creation of Mastercard users and autonomous XML serialization to facilitate new user creation on Mastercard's older software. Additionally created a tool autonomously removing serialized users from Mastercard XML datasheets. Wrote the tool in JavaScript with NodeJS standard libraries. "
 			desc2="Prototyped and documented various internal Mastercard products. Created all documentation for accessing and posting from an internal Mastercard product API. Used this documentation to create a system design prototype for a solution to fully autonomous user creation."
 		/>
 		<br />
 		<TimeLineExp
 			company="Netflix"
-			title="Software Engineering Intern, Summer 2023 (Los Gatos, CA)"
+			title="Software Engineering Intern"
+			metadata="May - August 2023 (Los Gatos, CA)"
 			desc="Software Engineer for the Partner Growth and Experience - Partner Payments Engineering team."
 			desc2="Created a backend service for autonomously validating partner infrastructure integrations with Netflix."
 		/>
 		<br />
 		<TimeLineExp
 			company="Netflix"
-			title="Incoming Software Engineer, Summer 2024 (Los Gatos, CA)"
+			title="Incoming Software Engineer"
+			metadata="Summer 2024 (Los Gatos, CA)"
 			desc="Team tbd."
 		/>
 	</div>
