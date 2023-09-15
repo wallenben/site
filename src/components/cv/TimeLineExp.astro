@@ -1,5 +1,5 @@
 ---
-const { title, subtitle, desc, company, desc2, metadata } = Astro.props;
+const { title, subtitle, desc, company, desc2, desc3, metadata } = Astro.props;
 ---
 
 <div class="flex">
@@ -17,5 +17,6 @@ const { title, subtitle, desc, company, desc2, metadata } = Astro.props;
 			{desc}
 		</p>
 		<p class="text-justify">{desc2}</p>
+		<p class="italic mb-1 text-sm">{desc3}</p>
 	</div>
 </div>
